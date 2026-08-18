@@ -6,9 +6,23 @@ int main()
 
     printf("Enter N: ");
     scanf("%d", &N);
-
-    // Program 1: 0, 2, 4, 6...N
+    // Program 1: 1 to N
     printf("\nProgram 1:\n");
+
+for(int i = 1; i <= N; i++)
+{
+    printf("%d ", i);
+}
+// Program 2: N to 1
+printf("\n\nProgram 2:\n");
+
+for(int i = N; i >= 1; i--)
+{
+    printf("%d ", i);
+}
+
+    // Program 3: 0, 2, 4, 6...N
+    printf("\nProgram 3:\n");
 
     for(int i = 0; i <= N; i = i + 2)
     {
@@ -16,8 +30,8 @@ int main()
     }
 
 
-    // Program 2: 1, 3, 9, 27...Till N
-    printf("\n\nProgram 2:\n");
+    // Program 4: 1, 3, 9, 27...Till N
+    printf("\n\nProgram 4:\n");
 
     for(int i = 1; i <= N; i = i * 3)
     {
@@ -25,8 +39,8 @@ int main()
     }
 
 
-    // Program 3: 1,2,3,5,7,11,17,...Till N
-    printf("\n\nProgram 3:\n");
+    // Program 5: 1,2,3,5,7,11,17,...Till N
+    printf("\n\nProgram 5:\n");
 
     for(int i = 2; i <= N; i++)
     {
